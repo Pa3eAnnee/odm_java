@@ -1,7 +1,13 @@
 .button {
-    -fx-background-color: #B7ADCF;
+    -fx-background-color: #4F646F;
     -fx-background-radius: 0em;
 }
 .button:hover {
-    -fx-background-color: #4F646F;
+    -fx-background-color: #6f4f4f;
+}
+
+.table-view.column-header,
+.table-view.column-header-background .filler {
+    -fx-cell-size: 20;
+    -fx-background-color: 715600;
 }
