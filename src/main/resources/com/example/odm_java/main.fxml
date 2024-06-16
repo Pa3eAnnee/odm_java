@@ -100,7 +100,7 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="391.0" prefWidth="495.0">
                                  <children>
-                                    <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="447.0">
+                                    <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="447.0" spacing="5.0">
                                        <children>
                                           <Label alignment="CENTER" prefHeight="35.0" prefWidth="97.0" text="Membres" />
                                           <Button mnemonicParsing="false" style="-fx-background-color: #4F646F;" text="Ajouter" />
