@@ -20,15 +20,15 @@
          <left>
             <VBox prefHeight="411.0" prefWidth="146.0" style="-fx-background-color: #4F646F;" BorderPane.alignment="CENTER">
                <children>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" stylesheets="@../../../../java/css/styling.css" text="Membres" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #4F646F;" stylesheets="@../../../../java/css/styling.css" text="Membres" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../../java/icons/Female%20Profile.png" />
+                              <Image url="@../../../../java/icons/Profile.png" />
                            </image>
                         </ImageView>
                      </graphic></Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" stylesheets="@../../../../java/css/styling.css" text="Planning" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #4F646F;" stylesheets="@../../../../java/css/styling.css" text="Planning" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -36,7 +36,7 @@
                            </image>
                         </ImageView>
                      </graphic></Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" stylesheets="@../../../../java/css/styling.css" text="Liste de course" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="54.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #4F646F;" stylesheets="@../../../../java/css/styling.css" text="Liste de course" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -44,7 +44,7 @@
                            </image>
                         </ImageView>
                      </graphic></Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" stylesheets="@../../../../java/css/styling.css" text="Projets" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" style="-fx-background-color: #4F646F;" stylesheets="@../../../../java/css/styling.css" text="Projets" textFill="WHITE">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -59,7 +59,7 @@
          <top>
             <HBox prefHeight="36.0" prefWidth="621.0" style="-fx-background-color: #4F646F;" BorderPane.alignment="CENTER">
                <children>
-                  <Label alignment="CENTER" prefHeight="31.0" prefWidth="599.0" text="ODM - Organisation de Décentralisation du Monde" textFill="WHITE">
+                  <Label alignment="CENTER" prefHeight="64.0" prefWidth="641.0" text="ODM - Organisation de Décentralisation du Monde" textFill="WHITE">
                      <font>
                         <Font name="Vivaldi Italic" size="18.0" />
                      </font>
@@ -71,6 +71,15 @@
                         </ImageView>
                      </graphic>
                   </Label>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #4F646F;">
+                     <graphic>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../java/icons/Cross.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children></HBox>
          </top>
          <center>
