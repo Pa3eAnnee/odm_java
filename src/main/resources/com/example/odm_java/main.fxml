@@ -18,33 +18,33 @@
    <children>
       <BorderPane prefHeight="639.0" prefWidth="806.0">
          <left>
-            <VBox fx:id="leftVBox" prefHeight="603.0" prefWidth="150.0" styleClass="vbox" BorderPane.alignment="CENTER">
+            <VBox fx:id="leftVBox" prefHeight="603.0" prefWidth="150.0" style="-fx-background-color: #4F646F;" styleClass="vbox" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="membresButton" onAction="#handleButtonClick" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Membres" textFill="WHITE">
+                  <Button fx:id="membresButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Membres">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                           <Image url="@icons/Profile.png"/>
+                           <Image url="@icons/Profile.png" />
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="planningButton" onAction="#handleButtonClick" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Planning" textFill="WHITE">
+                  <Button fx:id="planningButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Planning">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                           <Image url="@icons/Calendar.png"/>
+                           <Image url="@icons/Calendar.png" />
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="listeDeCourseButton" onAction="#handleButtonClick" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Liste de course" textFill="WHITE">
+                  <Button fx:id="listeDeCourseButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Liste de course">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                           <Image url="@icons/Course.png"/>
+                           <Image url="@icons/Course.png" />
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="projetsButton" onAction="#handleButtonClick" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Projets" textFill="WHITE">
+                  <Button fx:id="projetsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Projets">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                           <Image url="@icons/Project.png"/>
+                           <Image url="@icons/Project.png" />
                         </ImageView>
                      </graphic>
                   </Button>
@@ -80,25 +80,10 @@
          <center>
             <BorderPane prefHeight="600.0" prefWidth="700.0" BorderPane.alignment="CENTER">
                <top>
-                  <HBox prefHeight="33.0" prefWidth="682.0" style="-fx-background-color: #4F646F;" BorderPane.alignment="CENTER">
-                     <children>
-                        <Label alignment="CENTER" prefHeight="31.0" prefWidth="599.0" text="ODM - Organisation de Décentralisation du Monde" textFill="WHITE">
-                           <font>
-                              <Font name="System Italic" size="12.0" />
-                           </font>
-                           <graphic>
-                              <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@icons/Globe.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                        </Label>
-                     </children>
-                  </HBox>
+                  <HBox prefHeight="0.0" prefWidth="656.0" style="-fx-background-color: #4F646F;" BorderPane.alignment="CENTER" />
                </top>
                <left>
-                  <TabPane prefHeight="570.0" prefWidth="649.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+                  <TabPane prefHeight="595.0" prefWidth="649.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
                      <tabs>
                         <Tab text="Membres">
                            <content>
@@ -107,12 +92,12 @@
                                     <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="699.0" spacing="5.0">
                                        <children>
                                           <Label alignment="CENTER" prefHeight="35.0" prefWidth="97.0" text="Membres" />
-                                          <Button mnemonicParsing="false" style="-fx-background-color: #4F646F;" text="Ajouter" />
-                                          <Button mnemonicParsing="false" style="-fx-background-color: #4F646F;" text="Modifier" />
-                                          <Button mnemonicParsing="false" style="-fx-background-color: #4F646F;" text="Supprimer" />
+                                          <Button mnemonicParsing="false" text="Ajouter" />
+                                          <Button mnemonicParsing="false" text="Modifier" />
+                                          <Button mnemonicParsing="false" text="Supprimer" />
                                        </children>
                                     </HBox>
-                                    <TableView layoutY="45.0" prefHeight="460.0" prefWidth="651.0" style="-fx-background-color: #B7ADCF;">
+                                    <TableView layoutY="45.0" prefHeight="498.0" prefWidth="651.0" style="-fx-background-color: #B7ADCF;">
                                        <columns>
                                           <TableColumn prefWidth="75.0" text="ID" />
                                           <TableColumn prefWidth="75.0" text="ROLE" />
