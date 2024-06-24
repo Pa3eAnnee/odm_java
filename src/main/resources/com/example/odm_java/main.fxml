@@ -11,14 +11,14 @@
          <left>
             <VBox fx:id="leftVBox" prefHeight="603.0" prefWidth="150.0" style="-fx-background-color: #4F646F;" styleClass="vbox" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="membresButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Membres">
+                  <Button fx:id="membresButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToMembre" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Membres">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <Image url="@icons/Profile.png" />
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="planningButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Planning">
+                  <Button fx:id="planningButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToPlanning" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Planning">
                      <graphic>
                         <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                            <Image url="@icons/Calendar.png" />
