@@ -7,6 +7,7 @@ module com.example.odm_java {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
 	requires org.json;
+	requires jdk.xml.dom;
 
 	opens com.example.odm_java to javafx.fxml;
     exports com.example.odm_java;

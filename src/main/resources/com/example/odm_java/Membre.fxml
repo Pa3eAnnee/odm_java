@@ -9,10 +9,10 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.text.Font?>
-<AnchorPane xmlns="http://javafx.com/javafx"
+<VBox xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.odm_java.Controller"
-            prefHeight="400.0" prefWidth="600.0">
+            fx:controller="com.example.odm_java.MembreController"
+            prefHeight="600.0" prefWidth="800.0">
     <children>
         <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <left>
@@ -54,7 +54,7 @@
                     <children>
                         <HBox prefHeight="44.0" prefWidth="800.0" style="-fx-background-color: #4F646F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <children>
-                                <Label alignment="CENTER" prefHeight="44.0" prefWidth="772.0" text="ODM - Organisation de Décentralisation du Monde" textFill="WHITE">
+                                <Label alignment="CENTER" prefHeight="44.0" prefWidth="772.0" text="ODM - Organisation de Décentralisation du Monde - Membre" textFill="WHITE">
                                     <font>
                                         <Font name="Vivaldi Italic" size="18.0" />
                                     </font>
@@ -149,4 +149,4 @@
             </center>
         </BorderPane>
     </children>
-</AnchorPane>
+</VBox>

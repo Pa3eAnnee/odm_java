@@ -69,18 +69,10 @@ public class Controller implements Initializable {
     }
 
     public void goToPlanning(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Planning.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        ViewSwitcher.switchTo(View.PLANNING);
     }
 
     public void goToMembre(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Membre.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        ViewSwitcher.switchTo(View.MEMBRE);
     }
 }

@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import org.w3c.dom.css.ViewCSS;
 
 import java.io.IOException;
 
@@ -14,6 +15,9 @@ public class Application extends javafx.application.Application {
         FXMLLoader root = new FXMLLoader(Application.class.getResource("main.fxml"));
         Scene scene = new Scene(root.load(), 800, 600);
         stage.initStyle(StageStyle.UNDECORATED);
+
+        ViewSwitcher.setScene(scene);
+        ViewSwitcher.switchTo(View.MAIN);
 
         stage.setTitle("App");
         stage.setScene(scene);
