@@ -3,9 +3,19 @@ package com.example.odm_java;
 public class Member {
 	private String ID;
 	private String ROLE;
+
+
 	private String EMAIL;
 	private String FIRST_NAME;
 	private String LAST_NAME;
+
+	public Member(String ID, String ROLE, String EMAIL, String FIRST_NAME, String LAST_NAME) {
+		this.ID = ID;
+		this.ROLE = ROLE;
+		this.EMAIL = EMAIL;
+		this.FIRST_NAME = FIRST_NAME;
+		this.LAST_NAME = LAST_NAME;
+	}
 
 	public String getID() {
 		return ID;
