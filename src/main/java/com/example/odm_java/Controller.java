@@ -30,4 +30,9 @@ public class Controller {
         alert.setContentText(buttonText);
         alert.showAndWait();
     }
+
+    @FXML
+    private void handleCloseButtonClick() {
+        System.exit(0);
+    }
 }
