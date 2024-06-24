@@ -23,7 +23,6 @@ public class Controller implements Initializable {
     @FXML private TableColumn<Member, String> colFirstname;
     @FXML private TableColumn<Member, String> colLastname;
 
-
     @FXML
     public void handleButtonClick(ActionEvent event) {
         Button clickedButton = (Button) event.getSource();
@@ -56,6 +55,4 @@ public class Controller implements Initializable {
         String filePath = new File("src/main/resources/com/example/odm_java/mock_data/members.json").getAbsolutePath();
         return Utils.readMembersFromFile(filePath);
     }
-
-
 }
