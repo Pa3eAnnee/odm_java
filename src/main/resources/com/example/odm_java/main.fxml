@@ -89,7 +89,7 @@
                                                 <Button mnemonicParsing="false" text="Supprimer" />
                                              </children>
                                           </HBox>
-                                          <TableView layoutY="45.0" prefHeight="498.0" prefWidth="651.0" style="-fx-background-color: #B7ADCF;">
+                                          <TableView fx:id="tableView" layoutY="45.0" prefHeight="498.0" prefWidth="651.0" style="-fx-background-color: #B7ADCF;">
                                              <columns>
                                                 <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
                                                 <TableColumn fx:id="colRole" prefWidth="75.0" text="ROLE" />

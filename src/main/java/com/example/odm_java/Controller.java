@@ -4,6 +4,11 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
+import java.io.InputStream;
+import java.util.List;
 
 public class Controller {
 
@@ -18,6 +23,14 @@ public class Controller {
 
     @FXML
     private Button projetsButton;
+
+    @FXML private TableView<Member> tableView;
+    @FXML private TableColumn<Member, String> colId;
+    @FXML private TableColumn<Member, String> colRole;
+    @FXML private TableColumn<Member, String> colEmail;
+    @FXML private TableColumn<Member, String> colFirstname;
+    @FXML private TableColumn<Member, String> colLastname;
+
 
     @FXML
     public void handleButtonClick(ActionEvent event) {
