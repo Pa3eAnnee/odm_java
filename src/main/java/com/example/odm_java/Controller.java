@@ -10,33 +10,13 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.ResourceBundle;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Controller implements Initializable {
 
-    @FXML
-    private Button membresButton;
-
-    @FXML
-    private Button planningButton;
-
-    @FXML
-    private Button listeDeCourseButton;
-
-    @FXML
-    private Button projetsButton;
-
-    @FXML private TableView<Member> tableView;
+	@FXML private TableView<Member> tableView;
     @FXML private TableColumn<Member, String> colId;
     @FXML private TableColumn<Member, String> colRole;
     @FXML private TableColumn<Member, String> colEmail;
