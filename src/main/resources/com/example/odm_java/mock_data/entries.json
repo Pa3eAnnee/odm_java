@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Dentist Appointment",
+    "startDate": "2024-06-25",
+    "startTime": "10:45",
+    "endDate": "2024-06-25",
+    "endTime": "11:45",
+    "zoneId": "UTC",
+    "recurrenceRule": "RRULE:FREQ=DAILY;INTERVAL=2;"
+  },
+  {
+    "title": "Team Meeting",
+    "startDate": "2024-06-26",
+    "startTime": "09:00",
+    "endDate": "2024-06-26",
+    "endTime": "10:00",
+    "zoneId": "UTC",
+    "recurrenceRule": ""
+  },
+  {
+    "title": "General Assembly",
+    "startDate": "2024-01-01",
+    "startTime": "09:00",
+    "endDate": "2024-01-01",
+    "endTime": "19:00",
+    "zoneId": "UTC",
+    "recurrenceRule": "RRULE:FREQ=MONTHLY"
+  }
+]

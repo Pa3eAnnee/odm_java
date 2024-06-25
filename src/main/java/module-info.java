@@ -8,6 +8,8 @@ module com.example.odm_java {
     requires org.kordamp.bootstrapfx.core;
 	requires org.json;
 	requires jdk.xml.dom;
+	requires com.calendarfx.view;
+	requires javafx.graphics;
 
 	opens com.example.odm_java to javafx.fxml;
     exports com.example.odm_java;
