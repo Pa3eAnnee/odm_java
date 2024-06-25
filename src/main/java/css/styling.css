@@ -58,3 +58,11 @@
 .tab:selected {
     -fx-background-color: #34495e;
 }
+
+#closeButton {
+    -fx-background-color: red;
+}
+
+#closeButton:hover {
+    -fx-background-color: darkred;
+}

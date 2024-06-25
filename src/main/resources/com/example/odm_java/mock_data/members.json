@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "1",
+    "ROLE": "admin",
+    "EMAIL": "linus.torvalds@example.com",
+    "FIRST_NAME": "Linus",
+    "LAST_NAME": "Torvalds",
+    "magic": "high"
+  },
+  {
+    "ID": "2",
+    "ROLE": "user",
+    "EMAIL": "brian.kernighan@example.com",
+    "FIRST_NAME": "Brian",
+    "LAST_NAME": "Kernighan"
+  },
+  {
+    "ID": "3",
+    "ROLE": "editor",
+    "EMAIL": "dennis.ritchie@example.com",
+    "FIRST_NAME": "Dennis",
+    "LAST_NAME": "Ritchie"
+  },
+  {
+    "ID": "4",
+    "ROLE": "user",
+    "EMAIL": "tim.berners-lee@example.com",
+    "FIRST_NAME": "Tim",
+    "LAST_NAME": "Berners-Lee"
+  },
+  {
+    "ID": "5",
+    "ROLE": "moderator",
+    "EMAIL": "ada.lovelace@example.com",
+    "FIRST_NAME": "Ada",
+    "LAST_NAME": "Lovelace"
+  }
+]
