@@ -4,7 +4,8 @@
     "ROLE": "admin",
     "EMAIL": "linus.torvalds@example.com",
     "FIRST_NAME": "Linus",
-    "LAST_NAME": "Torvalds"
+    "LAST_NAME": "Torvalds",
+    "magic": "high"
   },
   {
     "ID": "2",

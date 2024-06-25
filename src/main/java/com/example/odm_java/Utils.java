@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDate;
@@ -16,7 +17,8 @@ import java.util.List;
 
 
 public class Utils {
-	public static List<Member> readMembersFromFile(String filePath) {
+	public static List<Member> readMembersFromFile(String filename) {
+		String filePath = new File("src/main/resources/com/example/odm_java/mock_data/" + filename).getAbsolutePath();
 		List<Member> members = new ArrayList<>();
 
 		try (FileReader reader = new FileReader(filePath)) {
@@ -38,14 +40,13 @@ public class Utils {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		for (Member member : members) {
-			System.out.println(member);
-		}
+
 		return members;
 	}
 
 
-	public static List<Entry<String>> readEntriesFromFile(String filePath) {
+	public static List<Entry<String>> readEntriesFromFile(String filename) {
+		String filePath = new File("src/main/resources/com/example/odm_java/mock_data/" + filename).getAbsolutePath();
 		List<Entry<String>> entries = new ArrayList<>();
 
 		try (FileReader reader = new FileReader(filePath)) {

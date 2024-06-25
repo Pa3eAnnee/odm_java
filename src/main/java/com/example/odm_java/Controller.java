@@ -64,8 +64,7 @@ public class Controller implements Initializable {
     }
 
     public static List<Member> loadMembers() {
-        String filePath = new File("src/main/resources/com/example/odm_java/mock_data/members.json").getAbsolutePath();
-        return Utils.readMembersFromFile(filePath);
+        return Utils.readMembersFromFile("members.json");
     }
 
     public void goToPlanning(ActionEvent event) throws IOException {

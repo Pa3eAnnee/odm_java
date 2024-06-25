@@ -12,12 +12,12 @@ public class Application extends javafx.application.Application {
     double x, y = 0;
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader root = new FXMLLoader(Application.class.getResource("main.fxml"));
+        FXMLLoader root = new FXMLLoader(Application.class.getResource("Membre.fxml"));
         Scene scene = new Scene(root.load(), 800, 600);
-        stage.initStyle(StageStyle.UNDECORATED);
+        stage.initStyle(StageStyle.DECORATED);
 
         ViewSwitcher.setScene(scene);
-        ViewSwitcher.switchTo(View.MAIN);
+        ViewSwitcher.switchTo(View.MEMBRE);
 
         stage.setTitle("App");
         stage.setScene(scene);
