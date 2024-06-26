@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="leftVBox" fx:controller="com.example.odm_java.HeaderController"
+      style="-fx-background-color: #4F646F;" styleClass="vbox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane BorderPane.alignment="CENTER">
+        <children>
+            <HBox prefHeight="44.0" prefWidth="1300.0" style="-fx-background-color: #4F646F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <children>
+                    <BorderPane HBox.hgrow="ALWAYS">
+                        <center>
+                            <Label alignment="CENTER" prefHeight="44.0" prefWidth="772.0" text="ODM - Organisation de Décentralisation du Monde - Membre" textFill="WHITE">
+                                <font>
+                                    <Font name="Vivaldi Italic" size="18.0" />
+                                </font>
+                                <graphic>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@icons/Globe.png" />
+                                        </image>
+                                    </ImageView>
+                                </graphic>
+                            </Label>
+                        </center>
+                    </BorderPane>
+                    <Button fx:id="closeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleCloseButtonClick" HBox.hgrow="NEVER">
+                        ❌
+                    </Button>
+                </children>
+            </HBox>
+        </children>
+    </AnchorPane>
+</VBox>

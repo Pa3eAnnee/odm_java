@@ -3,8 +3,6 @@ package com.example.odm_java;
 public class Member {
 	private String ID;
 	private String ROLE;
-
-
 	private String EMAIL;
 	private String FIRST_NAME;
 	private String LAST_NAME;
