@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="leftVBox" fx:controller="com.example.odm_java.NavbarController"
+      style="-fx-background-color: #4F646F;" styleClass="vbox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="membresButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToMembre" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Membres">
+            <graphic>
+                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@icons/Profile.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="planningButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToPlanning" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Planning">
+            <graphic>
+                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@icons/Calendar.png" />
+                </ImageView>
+            </graphic>
+        </Button>
+    </children>
+</VBox>

@@ -9,67 +9,10 @@
     <children>
         <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
             <left>
-                <VBox fx:id="leftVBox" style="-fx-background-color: #4F646F;" styleClass="vbox" BorderPane.alignment="CENTER">
-                    <children>
-                        <Button fx:id="membresButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToMembre" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Membres">
-                            <graphic>
-                                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                    <Image url="@icons/Profile.png" />
-                                </ImageView>
-                            </graphic>
-                        </Button>
-                        <Button fx:id="planningButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToPlanning" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Planning">
-                            <graphic>
-                                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                    <Image url="@icons/Calendar.png" />
-                                </ImageView>
-                            </graphic>
-                        </Button>
-                        <Button fx:id="listeDeCourseButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Résultat">
-                            <graphic>
-                                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                    <Image url="@icons/Course.png" />
-                                </ImageView>
-                            </graphic>
-                        </Button>
-                        <Button fx:id="projetsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Projets">
-                            <graphic>
-                                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                    <Image url="@icons/Project.png" />
-                                </ImageView>
-                            </graphic>
-                        </Button>
-                    </children>
-                </VBox>
+                <fx:include source="Navbar.fxml"/>
             </left>
             <top>
-                <AnchorPane BorderPane.alignment="CENTER">
-                    <children>
-                        <HBox prefHeight="44.0" prefWidth="1300.0" style="-fx-background-color: #4F646F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                            <children>
-                                <BorderPane HBox.hgrow="ALWAYS">
-                                    <center>
-                                        <Label alignment="CENTER" prefHeight="44.0" prefWidth="772.0" text="ODM - Organisation de Décentralisation du Monde - Membre" textFill="WHITE">
-                                            <font>
-                                                <Font name="Vivaldi Italic" size="18.0" />
-                                            </font>
-                                            <graphic>
-                                                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                                    <image>
-                                                        <Image url="@icons/Globe.png" />
-                                                    </image>
-                                                </ImageView>
-                                            </graphic>
-                                        </Label>
-                                    </center>
-                                </BorderPane>
-                                <Button fx:id="closeButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleCloseButtonClick" HBox.hgrow="NEVER">
-                                    ❌
-                                </Button>
-                            </children>
-                        </HBox>
-                    </children>
-                </AnchorPane>
+                <fx:include source="Header.fxml"/>
             </top>
             <center>
                 <AnchorPane BorderPane.alignment="CENTER">
