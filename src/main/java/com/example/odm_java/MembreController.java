@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class MembreController extends Controller implements Initializable {
+public class MemberController extends Controller implements Initializable {
 	@FXML
 	private TableView<Member> tableView;
 	@FXML private TableColumn<Member, String> colId;
@@ -28,6 +28,9 @@ public class MembreController extends Controller implements Initializable {
 
 	@Override
 	public void initialize(URL url, ResourceBundle resourceBundle) {
+		// Call API
+		Api.getMembers();
+
 		colId.setCellValueFactory(new PropertyValueFactory<>("ID"));
 		colRole.setCellValueFactory(new PropertyValueFactory<>("ROLE"));
 		colEmail.setCellValueFactory(new PropertyValueFactory<>("EMAIL"));
@@ -58,7 +61,7 @@ public class MembreController extends Controller implements Initializable {
 				String FIRST_NAME = jsonObject.getString("FIRST_NAME");
 				String LAST_NAME = jsonObject.getString("LAST_NAME");
 
-				Member member = new Member(ID, ROLE, EMAIL, FIRST_NAME, LAST_NAME);
+				Member member = new Member();
 				members.add(member);
 			}
 		} catch (IOException e) {
