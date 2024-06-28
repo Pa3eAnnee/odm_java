@@ -49,7 +49,8 @@ public class MembreController extends Controller implements Initializable {
 	}
 
 	public static List<Member> readMembersFromFile(String filename) {
-		String filePath = new File("src/main/resources/com/example/odm_java/mock_data/" + filename).getAbsolutePath();
+//		String filePath = new File("src/main/resources/com/example/odm_java/mock_data/" + filename).getAbsolutePath();
+		String filePath = new File("src/main/resources/data/" + filename).getAbsolutePath();
 		List<Member> members = new ArrayList<>();
 
 		try (FileReader reader = new FileReader(filePath)) {

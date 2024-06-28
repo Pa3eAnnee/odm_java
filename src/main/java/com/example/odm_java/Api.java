@@ -28,7 +28,7 @@ public class Api {
 
 		String responseBody = responseBodyFuture.join();
 
-		Path filePath = Path.of("src", "resources", "data", "members.json");
+		Path filePath = Path.of("src", "main", "resources", "data", "members.json");
 		Files.createDirectories(filePath.getParent());
 		Files.writeString(filePath, responseBody, StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
 	}
