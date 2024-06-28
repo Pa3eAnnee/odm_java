@@ -10,6 +10,7 @@ module com.example.odm_java {
 	requires jdk.xml.dom;
 	requires com.calendarfx.view;
 	requires javafx.graphics;
+	requires java.net.http;
 
 	opens com.example.odm_java to javafx.fxml;
     exports com.example.odm_java;

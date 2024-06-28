@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class MemberController extends Controller implements Initializable {
+public class MembreController extends Controller implements Initializable {
 	@FXML
 	private TableView<Member> tableView;
 	@FXML private TableColumn<Member, String> colId;
@@ -29,7 +29,11 @@ public class MemberController extends Controller implements Initializable {
 	@Override
 	public void initialize(URL url, ResourceBundle resourceBundle) {
 		// Call API
-		Api.getMembers();
+		try {
+			Api.getMembers();
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 
 		colId.setCellValueFactory(new PropertyValueFactory<>("ID"));
 		colRole.setCellValueFactory(new PropertyValueFactory<>("ROLE"));
@@ -55,13 +59,13 @@ public class MemberController extends Controller implements Initializable {
 			for (int i = 0; i < jsonArray.length(); i++) {
 				JSONObject jsonObject = jsonArray.getJSONObject(i);
 
-				String ID = jsonObject.getString("ID");
-				String ROLE = jsonObject.getString("ROLE");
-				String EMAIL = jsonObject.getString("EMAIL");
-				String FIRST_NAME = jsonObject.getString("FIRST_NAME");
-				String LAST_NAME = jsonObject.getString("LAST_NAME");
+				Number ID = jsonObject.getNumber("id");
+				String ROLE = jsonObject.getString("role");
+				String EMAIL = jsonObject.getString("email");
+				String FIRST_NAME = jsonObject.getString("first_name");
+				String LAST_NAME = jsonObject.getString("last_name");
 
-				Member member = new Member();
+				Member member = new Member(ID, ROLE, EMAIL, FIRST_NAME, LAST_NAME);
 				members.add(member);
 			}
 		} catch (IOException e) {

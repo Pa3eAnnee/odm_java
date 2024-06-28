@@ -1,13 +1,13 @@
 package com.example.odm_java;
 
 public class Member {
-	private String ID;
+	private Number ID;
 	private String ROLE;
 	private String EMAIL;
 	private String FIRST_NAME;
 	private String LAST_NAME;
 
-	public Member(String ID, String ROLE, String EMAIL, String FIRST_NAME, String LAST_NAME) {
+	public Member(Number ID, String ROLE, String EMAIL, String FIRST_NAME, String LAST_NAME) {
 		this.ID = ID;
 		this.ROLE = ROLE;
 		this.EMAIL = EMAIL;
@@ -15,11 +15,11 @@ public class Member {
 		this.LAST_NAME = LAST_NAME;
 	}
 
-	public String getID() {
+	public Number getID() {
 		return ID;
 	}
 
-	public void setID(String ID) {
+	public void setID(Number ID) {
 		this.ID = ID;
 	}
 

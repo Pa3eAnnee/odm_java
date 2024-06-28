@@ -1,7 +1,7 @@
 package com.example.odm_java;
 
 public enum View {
-	MEMBRE("Membre.fxml"),
+	MEMBRE("Member.fxml"),
 	PLANNING("Planning.fxml");
 
 	private String filename;
