@@ -1,5 +1,9 @@
 package com.example.odm_java;
 
+import com.dlsc.formsfx.model.structure.Field;
+import com.dlsc.formsfx.model.structure.Form;
+import com.dlsc.formsfx.model.structure.Group;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
@@ -17,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class MembreController extends Controller implements Initializable {
+public class MemberController extends Controller implements Initializable {
 	@FXML
 	private TableView<Member> tableView;
 	@FXML private TableColumn<Member, String> colId;
@@ -74,5 +78,35 @@ public class MembreController extends Controller implements Initializable {
 		}
 
 		return members;
+	}
+
+	public void addMember(ActionEvent actionEvent) {
+		Form loginForm = Form.of(
+			Group.of(
+				Field.ofStringType("")
+					.label("Username"),
+				Field.ofStringType("")
+					.label("Password")
+					.required("This field can’t be empty")
+			)
+		).title("Login");
+	}
+
+	public void updateMember(ActionEvent actionEvent) {
+		Member selectedMember = tableView.getSelectionModel().getSelectedItem();
+		if (selectedMember != null) {
+			System.out.println("Selected member: " + selectedMember.getID() + ", " + selectedMember.getROLE() + ", " + selectedMember.getEMAIL() + ", " + selectedMember.getFIRST_NAME() + ", " + selectedMember.getLAST_NAME());
+		} else {
+			System.out.println("No member selected.");
+		}
+	}
+
+	public void deleteMember(ActionEvent actionEvent) {
+		Member selectedMember = tableView.getSelectionModel().getSelectedItem();
+		if (selectedMember != null) {
+			System.out.println("Selected member: " + selectedMember.getID() + ", " + selectedMember.getROLE() + ", " + selectedMember.getEMAIL() + ", " + selectedMember.getFIRST_NAME() + ", " + selectedMember.getLAST_NAME());
+		} else {
+			System.out.println("No member selected.");
+		}
 	}
 }

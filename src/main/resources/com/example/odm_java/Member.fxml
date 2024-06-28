@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="1000.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.odm_java.MembreController">
+<VBox prefHeight="1000.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.odm_java.MemberController">
     <children>
         <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
             <left>
@@ -27,9 +27,9 @@
                                                     <HBox alignment="CENTER_LEFT" prefHeight="93.0" prefWidth="1141.0" spacing="5.0">
                                                         <children>
                                                             <Label alignment="CENTER" prefHeight="35.0" prefWidth="97.0" text="Membres" />
-                                                            <Button mnemonicParsing="false" text="Ajouter" />
-                                                            <Button mnemonicParsing="false" text="Modifier" />
-                                                            <Button mnemonicParsing="false" text="Supprimer" />
+                                                            <Button mnemonicParsing="false" text="Ajouter" onAction="#addMember"/>
+                                                            <Button mnemonicParsing="false" text="Modifier" onAction="#updateMember"/>
+                                                            <Button mnemonicParsing="false" text="Supprimer" onAction="#deleteMember"/>
                                                         </children>
                                                     </HBox>
                                                     <TableView fx:id="tableView" prefHeight="887.0" prefWidth="1141.0" style="-fx-background-color: #B7ADCF;" VBox.vgrow="ALWAYS">
