@@ -3,12 +3,17 @@ package com.example.odm_java;
 import com.dlsc.formsfx.model.structure.Field;
 import com.dlsc.formsfx.model.structure.Form;
 import com.dlsc.formsfx.model.structure.Group;
+import com.dlsc.formsfx.view.renderer.FormRenderer;
+import javafx.beans.property.StringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
@@ -76,17 +81,10 @@ public class MemberController extends Controller implements Initializable {
 		return members;
 	}
 
-	public void addMember(ActionEvent actionEvent) {
-		Form loginForm = Form.of(
-			Group.of(
-				Field.ofStringType("")
-					.label("Username"),
-				Field.ofStringType("")
-					.label("Password")
-					.required("This field can’t be empty")
-			)
-		).title("Login");
+	public void addMember(ActionEvent actionEvent) throws IOException {
+
 	}
+
 
 	public void updateMember(ActionEvent actionEvent) {
 		Member selectedMember = tableView.getSelectionModel().getSelectedItem();
