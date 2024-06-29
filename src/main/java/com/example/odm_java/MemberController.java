@@ -33,11 +33,7 @@ public class MemberController extends Controller implements Initializable {
 	@Override
 	public void initialize(URL url, ResourceBundle resourceBundle) {
 		// Call API
-		try {
-			Api.getMembers();
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		Api.getMembers();
 
 		colId.setCellValueFactory(new PropertyValueFactory<>("ID"));
 		colRole.setCellValueFactory(new PropertyValueFactory<>("ROLE"));
