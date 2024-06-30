@@ -21,5 +21,12 @@
                 </ImageView>
             </graphic>
         </Button>
+        <Button fx:id="activity" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#goToPlanning" prefHeight="44.0" prefWidth="159.0" styleClass="button" text="Activités">
+            <graphic>
+                <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@icons/Course.png" />
+                </ImageView>
+            </graphic>
+        </Button>
     </children>
 </VBox>
