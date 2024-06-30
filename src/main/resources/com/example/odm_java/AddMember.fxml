@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.odm_java.MemberAddController"
@@ -19,7 +23,39 @@
         <fx:include source="Header.fxml"/>
     </top>
         <center>
-
+            <ScrollPane fx:id="scrollPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox spacing="20" alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <Label text="Registration Form" />
+                <TextField fx:id="roleField" promptText="Role" />
+                <TextField fx:id="firstNameField" promptText="First Name" />
+                <TextField fx:id="lastNameField" promptText="Last Name" />
+                <DatePicker fx:id="birthdayField"/>
+                <ChoiceBox fx:id="sexeField">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Male" />
+                            <String fx:value="Female" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <TextField fx:id="phoneField" promptText="Phone" />
+                <TextField fx:id="emailField" promptText="Email" />
+                <PasswordField fx:id="passwordField" promptText="Password" />
+                <ChoiceBox fx:id="accountStatusField" accessibleText="Account Status">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Active" />
+                            <String fx:value="Inactive" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <TextField fx:id="permissionsField" promptText="Permissions" />
+                <TextField fx:id="referrerIdField" promptText="Referrer ID" />
+                <TextField fx:id="countryField" promptText="Country" />
+                <TextField fx:id="cityField" promptText="City" />
+                <Button fx:id="registerButton" text="Register" onAction="#handleRegisterButtonAction" />
+            </VBox>
+            </ScrollPane>
         </center>
     </BorderPane>
     </children>

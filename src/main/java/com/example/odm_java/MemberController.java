@@ -26,6 +26,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
+import static com.example.odm_java.ViewSwitcher.switchTo;
+
 public class MemberController extends Controller implements Initializable {
 	@FXML
 	private TableView<Member> tableView;
@@ -82,7 +84,7 @@ public class MemberController extends Controller implements Initializable {
 	}
 
 	public void addMember(ActionEvent actionEvent) throws IOException {
-
+		switchTo(View.ADD_MEMBRE);
 	}
 
 
